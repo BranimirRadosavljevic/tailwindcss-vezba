@@ -25,4 +25,5 @@
             <img class="absolute inset-0 w-full h-full object-cover object-center" src="/img/beach-work.jpg" alt="Woman workcation">
         </div>
     </div>
+    <popular-destinations></popular-destinations>
 @endsection

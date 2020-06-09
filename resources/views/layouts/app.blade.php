@@ -7,9 +7,10 @@
     <title>Tailwind training</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
-<body class="bg-gray-300">
-    <div class="">
+<body class="">
+    <div id="app">
         @yield('content')
     </div>
+    <script src="/js/app.js"></script>
 </body>
 </html>
