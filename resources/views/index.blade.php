@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="bg-gray-100 flex">
+    <div class="bg-gray-100 flex antialiased">
         <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
             <div class="xl:max-w-lg">
                 <img class="h-10" src="/img/logo.svg" alt="Workcation">
@@ -26,4 +26,5 @@
         </div>
     </div>
     <popular-destinations></popular-destinations>
+    <properties></properties>
 @endsection

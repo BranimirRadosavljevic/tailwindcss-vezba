@@ -7,8 +7,8 @@
     <title>Tailwind training</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
-<body class="">
-    <div id="app">
+<body class="bg-gray-200">
+    <div id="app" class="antialiased text-gray-900">
         @yield('content')
     </div>
     <script src="/js/app.js"></script>
