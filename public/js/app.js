@@ -2112,6 +2112,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['property']
 });
@@ -37872,34 +37879,45 @@ var render = function() {
       }),
       _vm._v(" "),
       _c("div", { staticClass: "p-6" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "text-gray-600 text-xs uppercase font-semibold tracking-wide"
-          },
-          [
-            _vm._v(
-              "\n              " +
-                _vm._s(_vm.property.beds) +
-                " beds • " +
-                _vm._s(_vm.property.baths) +
-                " baths\n          "
-            )
-          ]
-        ),
+        _c("div", { staticClass: "flex items-baseline" }, [
+          _c(
+            "span",
+            {
+              staticClass:
+                "inline-block bg-teal-200 text-teal-800 text-xs uppercase font-semibold px-2 rounded-full tracking-wide"
+            },
+            [_vm._v("New")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide"
+            },
+            [
+              _vm._v(
+                "\n                      " +
+                  _vm._s(_vm.property.beds) +
+                  " beds • " +
+                  _vm._s(_vm.property.baths) +
+                  " baths\n                  "
+              )
+            ]
+          )
+        ]),
         _vm._v(" "),
         _c(
           "h4",
-          { staticClass: "font-semibold text-lg leading-tight truncate" },
+          { staticClass: "mt-1 font-semibold text-lg leading-tight truncate" },
           [_vm._v(_vm._s(_vm.property.title))]
         ),
         _vm._v(" "),
         _c("div", { staticClass: "mt-1" }, [
           _vm._v(
-            "\n              " +
+            "\n                  " +
               _vm._s(_vm.property.formattedPrice) +
-              "\n              "
+              "\n                  "
           ),
           _c("span", { staticClass: "text-gray-600 text-sm" }, [
             _vm._v(" / wk")
