@@ -2050,8 +2050,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'app',
@@ -2086,6 +2084,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -37838,17 +37837,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      {
-        staticClass:
-          "bg-gray-200 min-h-screen p-8 flex items-center justify-center"
-      },
-      [_c("PropertyCard", { attrs: { property: _vm.property } })],
-      1
-    )
-  ])
+  return _c(
+    "div",
+    {
+      staticClass:
+        "bg-gray-200 min-h-screen p-8 flex items-center justify-center"
+    },
+    [_c("PropertyCard", { attrs: { property: _vm.property } })],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -37873,12 +37870,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "bg-white border rounded-lg overflow-hidden" }, [
+    _c("div", { staticClass: "relative bg-red-500 pb-5/6" }, [
       _c("img", {
+        staticClass: "absolute h-full w-full object-cover rounded-lg shadow-md",
         attrs: { src: _vm.property.imageUrl, alt: _vm.property.imageAlt }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "p-6" }, [
+      })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "relative px-4 -mt-16" }, [
+      _c("div", { staticClass: "bg-white p-6 rounded-lg shadow-lg" }, [
         _c("div", { staticClass: "flex items-baseline" }, [
           _c(
             "span",
@@ -37897,11 +37897,11 @@ var render = function() {
             },
             [
               _vm._v(
-                "\n                      " +
+                "\n                    " +
                   _vm._s(_vm.property.beds) +
                   " beds • " +
                   _vm._s(_vm.property.baths) +
-                  " baths\n                  "
+                  " baths\n                "
               )
             ]
           )
@@ -37915,9 +37915,9 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "mt-1" }, [
           _vm._v(
-            "\n                  " +
+            "\n                " +
               _vm._s(_vm.property.formattedPrice) +
-              "\n                  "
+              "\n                "
           ),
           _c("span", { staticClass: "text-gray-600 text-sm" }, [
             _vm._v(" / wk")
@@ -50134,6 +50134,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/css/main.css":
+/*!********************************!*\
+  !*** ./resources/css/main.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -50576,14 +50587,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!**************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/css/main.css ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\css\main.css */"./resources/css/main.css");
 
 
 /***/ })
