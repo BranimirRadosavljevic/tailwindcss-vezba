@@ -2073,6 +2073,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -38071,44 +38076,49 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        {
-          staticClass: "px-2 pb-4 pt-2 sm:flex sm:p-0",
-          class: _vm.isOpen ? "block" : "hidden"
-        },
+        { staticClass: "sm:block", class: _vm.isOpen ? "block" : "hidden" },
         [
           _c(
-            "a",
-            {
-              staticClass:
-                "block px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded",
-              attrs: { href: "#" }
-            },
-            [_vm._v("List your property")]
+            "div",
+            { staticClass: "px-2 pb-4 pt-2 sm:flex sm:p-0 sm:items-center" },
+            [
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "block px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("List your property")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Trips")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Messages")]
+              ),
+              _vm._v(" "),
+              _c("AccountDropdown", { staticClass: "hidden sm:block sm:ml-6" })
+            ],
+            1
           ),
           _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0",
-              attrs: { href: "#" }
-            },
-            [_vm._v("Trips")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0",
-              attrs: { href: "#" }
-            },
-            [_vm._v("Messages")]
-          ),
-          _vm._v(" "),
-          _c("AccountDropdown", { staticClass: "ml-6" })
-        ],
-        1
+          _vm._m(1)
+        ]
       )
     ]
   )
@@ -38124,6 +38134,59 @@ var staticRenderFns = [
         attrs: { src: "/img/logo-inverted.svg", alt: "Workcation" }
       })
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "px-4 py-5 border-t border-gray-700 sm:hidden" },
+      [
+        _c("div", { staticClass: "flex items-center" }, [
+          _c("img", {
+            staticClass:
+              "h-8 w-8 rounded-full border-2 border-gray-500 object-cover",
+            attrs: {
+              src:
+                "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+              alt: ""
+            }
+          }),
+          _vm._v(" "),
+          _c("span", { staticClass: "ml-3 text-white" }, [_vm._v("Jack Dee")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-4" }, [
+          _c(
+            "a",
+            {
+              staticClass: "block text-gray-400 hover:text-white",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Account settings")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "mt-2 block text-gray-400 hover:text-white",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Support")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "mt-2 block text-gray-400 hover:text-white",
+              attrs: { href: "#" }
+            },
+            [_vm._v("Sign out")]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -38237,7 +38300,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "relative bg-red-500 pb-5/6" }, [
+    _c("div", { staticClass: "relative bg-red-500 pb-5/6 overflow-hidden" }, [
       _c("img", {
         staticClass: "absolute h-full w-full object-cover rounded-lg shadow-md",
         attrs: { src: _vm.property.imageUrl, alt: _vm.property.imageAlt }
@@ -50809,15 +50872,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************!*\
   !*** ./resources/js/components/Navbar.vue ***!
   \********************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar_vue_vue_type_template_id_6dde423b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=6dde423b& */ "./resources/js/components/Navbar.vue?vue&type=template&id=6dde423b&");
 /* harmony import */ var _Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.vue?vue&type=script&lang=js& */ "./resources/js/components/Navbar.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Navbar_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50847,7 +50909,7 @@ component.options.__file = "resources/js/components/Navbar.vue"
 /*!*********************************************************************!*\
   !*** ./resources/js/components/Navbar.vue?vue&type=script&lang=js& ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51100,9 +51162,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Programiranje\PHP\Code\tailwindcss-vezba\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! E:\Programiranje\PHP\Code\tailwindcss-vezba\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! E:\Programiranje\PHP\Code\tailwindcss-vezba\resources\css\main.css */"./resources/css/main.css");
+__webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\Programiranje\PHP\Code\tailwind-learning\resources\css\main.css */"./resources/css/main.css");
 
 
 /***/ })
