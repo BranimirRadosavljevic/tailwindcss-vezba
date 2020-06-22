@@ -29,4 +29,5 @@
 </div>
 <popular-destinations></popular-destinations>
 <properties></properties>
+<hey-stack></hey-stack>
 @endsection

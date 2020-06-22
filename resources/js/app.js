@@ -23,6 +23,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('popular-destinations', require('./components/PopularDestinations.vue').default);
 Vue.component('properties', require('./components/Properties.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
+Vue.component('hey-stack', require('./components/HeyStack.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
