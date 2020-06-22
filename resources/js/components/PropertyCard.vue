@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="relative bg-red-500 pb-5/6">
+        <div class="relative bg-red-500 pb-5/6 overflow-hidden">
             <img class="absolute h-full w-full object-cover rounded-lg shadow-md" :src="property.imageUrl" :alt="property.imageAlt">
         </div>
 

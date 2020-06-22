@@ -29,23 +29,28 @@
                 </button>
             </div>
         </div>
-        <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pb-4 pt-2 sm:flex sm:p-0">
-            <a
-                href="#"
-                class="block px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded"
-                >List your property</a
-            >
-            <a
-                href="#"
-                class="block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0"
-                >Trips</a
-            >
-            <a
-                href="#"
-                class="block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0"
-                >Messages</a
-            >
-            <AccountDropdown class="ml-6"></AccountDropdown>
+        <div :class="isOpen ? 'block' : 'hidden'" class="sm:block">
+            <div class="px-2 pb-4 pt-2 sm:flex sm:p-0 sm:items-center">
+                <a href="#" class="block px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded">List your property</a>
+                <a href="#" class="block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0">Trips</a>
+                <a href="#" class="block mt-1 px-2 py-1 text-white font-semibold hover:bg-gray-700 rounded sm:mt-0">Messages</a>
+                <AccountDropdown class="hidden sm:block sm:ml-6"/>
+            </div>
+            <div class="px-4 py-5 border-t border-gray-700 sm:hidden">
+                <div class="flex items-center">
+                    <img
+                        src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                        alt=""
+                        class="h-8 w-8 rounded-full border-2 border-gray-500 object-cover"
+                    />
+                    <span class="ml-3 text-white">Jack Dee</span>
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="block text-gray-400 hover:text-white">Account settings</a>
+                    <a href="#" class="mt-2 block text-gray-400 hover:text-white">Support</a>
+                    <a href="#" class="mt-2 block text-gray-400 hover:text-white">Sign out</a>
+                </div>
+            </div>
         </div>
     </header>
 </template>
